@@ -51,7 +51,7 @@ Since Sepal width looks similar for all the species, we can drop that feature.
 ## Key Visualizations:
 |                           |                           |
 |---------------------------|---------------------------|
-| (![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/c2b1caa8-5125-4850-bfd4-e39b1feeabe9)) | (![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/bd6c1aaf-3e87-4776-8394-cd84917d2ff4))
+| Boxplot:It visually compares distributions of sepal length, sepal width, petal length, petal width based on numerical data through their quartiles. ![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/c2b1caa8-5125-4850-bfd4-e39b1feeabe9) | (![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/bd6c1aaf-3e87-4776-8394-cd84917d2ff4))
 | (![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/640fdecb-81be-41ee-8b88-a997a080f828)) | (![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/eec6d04d-05a1-4e5a-8570-882f0fde13ad)
 ) 
 | (![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/d9ab3196-dc8d-449b-b628-4bcd3bd50741)) 

@@ -52,6 +52,60 @@ Since Sepal width looks similar for all the species, we can drop that feature.
 ## Feature Observations:
 ![image](https://github.com/DA-Atharv/Iris-Species-Prediction-Model-Evaluation/assets/159448408/8b2d33e5-dfec-4ac3-ba64-4ab3120c8669)
 
-## Analysis:
-From the mathematical models i used i can confirm that using petal features gives more accuracy.
-Further it was validated by the heatmap high correlation between petal length and width than that of sepal length and width. 
+## Splitting the data into training and testing dataset:
+```python
+train, test = train_test_split(iris_data, test_size = 0.3) # dataset is split into 70% training and 30% testing
+print(train.shape)
+print(test.shape)
+```
+## use petal and sepalas features:
+#### Training and testing data for petals and sepals:
+```python
+petal = iris_data[['petal_length','petal_width','species']]
+sepal = iris_data[['sepal_length','sepal_width','species']]
+
+#Iris_Petals:
+train_p,test_p = train_test_split(petal, test_size=0.3, random_state=0) 
+train_x_p = train_p[['petal_length','petal_width']]
+train_y_p = train_p.species
+
+test_x_p = test_p[['petal_length','petal_width']]
+test_y_p = test_p.species
+
+#Iris_Sepals:
+train_s,test_s = train_test_split(sepal, test_size=0.3, random_state=0) #sepals
+train_x_s = train_s[['sepal_length','sepal_width']]
+train_y_s = train_s.species
+
+test_x_s = test_s[['sepal_length','sepal_width']]
+test_y_s = test_s.species
+```
+## Logistic Regression:
+```python
+model = LogisticRegression()
+model.fit(train_x_p,train_y_p) 
+prediction=model.predict(test_x_p) 
+print('The accuracy of the Logistic Regression using Petals is:',metrics.accuracy_score(prediction,test_y_p))
+
+model.fit(train_x_s,train_y_s) 
+prediction=model.predict(test_x_s) 
+print('The accuracy of the Logistic Regression using Sepals is:',metrics.accuracy_score(prediction,test_y_s))
+```
++ The accuracy of the Logistic Regression using Petals is: 0.9777777777777777
++ The accuracy of the Logistic Regression using Sepals is: 0.8222222222222222
+## Decision Tree: 
+```python
+model=DecisionTreeClassifier()
+model.fit(train_x_p,train_y_p) 
+prediction=model.predict(test_x_p) 
+print('The accuracy of the Decision Tree using Petals is:',metrics.accuracy_score(prediction,test_y_p))
+
+model.fit(train_x_s,train_y_s) 
+prediction=model.predict(test_x_s) 
+print('The accuracy of the Decision Tree using Sepals is:',metrics.accuracy_score(prediction,test_y_s))
+```
++ The accuracy of the Decision Tree using Petals is: 0.9555555555555556
++ The accuracy of the Decision Tree using Sepals is: 0.6444444444444445
+## Conclusion:
++ From the mathematical models i used i can confirm that using petal features gives more accuracy.
++ Further it was validated by the heatmap high correlation between petal length and width than that of sepal length and width. 

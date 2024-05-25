@@ -61,7 +61,7 @@ train, test = train_test_split(iris_data, test_size = 0.3) # dataset is split in
 print(train.shape)
 print(test.shape)
 ```
-## use petal and sepalas features:
+### use petal & sepalas as features: 
 #### Training and testing data for petals and sepals:
 ```python
 petal = iris_data[['petal_length','petal_width','species']]

@@ -1,4 +1,16 @@
-# Iris-Species-Classification:
+# Iris-Species-Classification-Building_ML-Models:
+## Table of Contents:
+- [Introduction](#introduction)
+- [Data Collection](#data-collection)
+- [Data Processing](#data-processing)
+- [Exploratory Data Analysis (EDA) & Statastics](#exploratory-data-analysis-eda-&-Statastics)
+- [Key Visualizations](#Key-Visualizations)
+- [Feature Observations](#feature-observations)
+- [Feature Selection](#feature-selection)
+- [Train & Test Data](#splitting-the-data-into-training-and-testing-dataset)
+- [Logistic Regression](#Logistic-Regression)
+- [Decision Tree](#Decision-Tree)
+- [Conclusion](#conclusion)
 
 ## Introduction:
 The Iris flower data set or Fisher’s Iris data set is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in his 1936 paper the use of multiple measurements in taxonomic problems as an example of linear discriminant analysis.
@@ -61,7 +73,7 @@ train, test = train_test_split(iris_data, test_size = 0.3) # dataset is split in
 print(train.shape)
 print(test.shape)
 ```
-### use petal & sepalas as features: 
+### Feature Selection: Use petal & sepalas as features: 
 #### Training and testing data for petals and sepals:
 ```python
 petal = iris_data[['petal_length','petal_width','species']]

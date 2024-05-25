@@ -17,19 +17,13 @@ The features of iris flower are Sepal Length in cm, Sepal Width in cm, Petal Len
 # Load Iris csv dataset
 iris_data = pd.read_csv('../data/iris.csv')
 ```
-
-## Exploratory Data Analysis (EDA):
-- Let’s group the data by species and do some descriptive statistics
+## Exploratory Data Analysis (EDA) & Statastics:
+- Let’s group the data by species and do some descriptive statistics:
 ```python
 # Groupby Species for descriptive statistics
 iris_data.groupby('species').describe().T
 ```
-## Key Visualizations:
-|                           |                           |
-|---------------------------|---------------------------|
-| Boxplot: It visually compares distributions of sepal length, sepal width, petal length, petal width based on numerical data through their quartiles. ![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/c2b1caa8-5125-4850-bfd4-e39b1feeabe9) | Pairplot: Relationships between variables across multiple dimensions. ![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/bd6c1aaf-3e87-4776-8394-cd84917d2ff4))
-| Swarm-Plot: ![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/640fdecb-81be-41ee-8b88-a997a080f828)) | (![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/eec6d04d-05a1-4e5a-8570-882f0fde13ad)
-| Voilin-Plot ![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/d9ab3196-dc8d-449b-b628-4bcd3bd50741) | Cheking Corellation: Heatmap ![image](https://github.com/DA-Atharv/Iris_Species_Classification/assets/159448408/ebcf5c1c-49d4-4f90-a526-838bce3ce054) |
+![image](https://github.com/DA-Atharv/Iris_Species_Classification/assets/159448408/ebcf5c1c-49d4-4f90-a526-838bce3ce054)
 - **count** shows that there 50 samples for each species.
 - **Setosa**
   - Average sepal length is 5cm
@@ -53,6 +47,12 @@ iris_data.groupby('species').describe().T
   - Sepal width looks similar for all three species — *Setosa(3cm), Versicolor(2.8cm) and Virginica(3cm)*.
   - Based on Sepal length, there are only small changes on three species (5cm, 6cm and 6.6cm)
 Since Sepal width looks similar for all the species, we can drop that feature.
+## Key Visualizations:
+|                           |                           |
+|---------------------------|---------------------------|
+| Boxplot: It visually compares distributions of sepal length, sepal width, petal length, petal width based on numerical data through their quartiles. ![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/c2b1caa8-5125-4850-bfd4-e39b1feeabe9) | Pairplot: Relationships between variables across multiple dimensions. ![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/bd6c1aaf-3e87-4776-8394-cd84917d2ff4))
+| Swarm-Plot: (![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/eec6d04d-05a1-4e5a-8570-882f0fde13ad)
+| Voilin-Plot ![image](https://github.com/DA-Atharv/Iris-Species-Classification-and-Model-Evaluation/assets/159448408/d9ab3196-dc8d-449b-b628-4bcd3bd50741) | 
 ## Feature Observations:
 ![image](https://github.com/DA-Atharv/Iris-Species-Prediction-Model-Evaluation/assets/159448408/8b2d33e5-dfec-4ac3-ba64-4ab3120c8669)
 

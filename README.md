@@ -48,3 +48,10 @@ iris_data.groupby('species').describe().T
   - Sepal width looks similar for all three species — *Setosa(3cm), Versicolor(2.8cm) and Virginica(3cm)*.
   - Based on Sepal length, there are only small changes on three species (5cm, 6cm and 6.6cm)
 Since Sepal width looks similar for all the species, we can drop that feature.
+
+## Feature Observations:
+![image](https://github.com/DA-Atharv/Iris-Species-Prediction-Model-Evaluation/assets/159448408/8b2d33e5-dfec-4ac3-ba64-4ab3120c8669)
+
+## Analysis:
+From the mathematical models i used i can confirm that using petal features gives more accuracy.
+Further it was validated by the heatmap high correlation between petal length and width than that of sepal length and width. 

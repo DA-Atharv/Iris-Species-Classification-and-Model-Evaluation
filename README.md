@@ -13,7 +13,6 @@
 - [Conclusion](#conclusion)
 ## Introduction:
 The Iris flower data set or Fisher’s Iris data set is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in his 1936 paper the use of multiple measurements in taxonomic problems as an example of linear discriminant analysis.
-
 ## Data Collection:
 The dataset is collected from Kaggle[https://www.kaggle.com/uciml/iris].
 This dataset consists of 3 categories of species which is setosa, versicolor and virginica.
@@ -21,7 +20,6 @@ We can find two kind of data from kaggle which is CSV data and SQLITE database.
 Each iris species consists of 50 samples.
 The features of iris flower are Sepal Length in cm, Sepal Width in cm, Petal Length in cm and Petal Width in cm.
 ![image](https://github.com/DA-Atharv/Iris_Species_Classification/assets/159448408/3a451bf4-c937-4b84-b059-1074151aa112)
-
 ## Data Processing:
 - Loaded the data.
 ```python
